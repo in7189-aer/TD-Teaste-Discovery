@@ -1,0 +1,19 @@
+{
+  "name": "TD TASTE DISCOVERY",
+  "short_name": "TD",
+  "description": "음식과 주류 페어링 미식 커뮤니티",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f6f3",
+  "theme_color": "#702e45",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
