@@ -34,3 +34,15 @@
 5. 공식 로고 적용, 테스트 및 배포
 
 주의: 현재 로컬 저장 데이터는 회원 간 공유되지 않으며, 실제 운영 서비스로 사용하면 안 됩니다.
+
+## 2026-11-07 추가 개발
+- 브라우저 로컬 기록의 JSON 백업, 복원, 삭제 기능을 index.html에 추가
+- database/schema.sql: Supabase용 테이블 및 RLS 정책 초안 작성 (실제 적용 전 검토 필요)
+- .github/workflows/check.yml 및 scripts/check_site.py: 정적 파일/자바스크립트 자동 검사 구성
+- GitHub Actions 실제 실행 결과, 웹사이트 배포 상태, 모바일 기기 테스트는 아직 확인되지 않음
+
+## 다음 외부 서비스 의존 단계
+- Supabase 프로젝트를 소유자 계정으로 생성하고 공개 URL과 anon/publishable key 설정 (service_role 비밀키는 절대 GitHub에 업로드 금지)
+- 소셜 로그인 OAuth 개발자 등록 및 승인
+- 서버에서 운영자 역할을 검증하는 승인 API 구현
+- AI 프록시 서버, 과금 한도 및 악용 방지 구현
